@@ -24,6 +24,7 @@ const config = {
         'feature-bg': "url('/feature-bg.png')",
         pattern: "url('/pattern.png')",
         'pattern-2': "url('/resources/pattern-bg.png')",
+        'camp-1': "url('/resources/img-1.png')",
       },
       colors: {
         border: "hsl(var(--border))",
