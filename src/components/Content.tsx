@@ -127,7 +127,7 @@ export default function Content() {
 
       {/*SECTION CAMP*/}
       <section
-        className=" border-2 border-green-500 2xl:mx-auto 2xl:max-w-[1440px] relative flex flex-col
+        className=" 2xl:mx-auto 2xl:max-w-[1440px] relative flex flex-col
        py-10 lg:mb-10 lg:py-20 xl:mb-20 "
       >
         <div
@@ -152,10 +152,74 @@ export default function Content() {
           <div className="bg-green-500 p-8 lg:max-w-[500px] rounded-3xl relative w-full overflow-hidden">
             <h2 className="capitalize text-white"><strong>Lorem ipsum dolor sit</strong> amet consectetur adipisicing.</h2>
             <p className="text-white text-sm mt-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat illo, veniam iusto ea modi ab placeat tempore quidem dolorem nihil!</p>
+            <Image
+              src="/resources/quote.svg"
+              alt="Camp"
+              width={40}
+              height={40}
+              className="absolute right-6 bottom-3 w-[140px]"
+            />
           </div>
 
         </div>
       </section>
+
+      {/*SECTION GUIDE*/}
+      <section className="flex flex-col justify-center items-center"> 
+        <div className=" px-6 lg:px-20 3xl:px-0 mx-auto max-w-[1440px] w-full pb-11">
+          <Image
+            src="/resources/camp.svg"
+            alt="Guide"
+            width={40}
+            height={50}
+            
+          />
+          <p className="uppercase font-medium text-primary mb-3">Lorem ipsum dolor sit amet.</p>
+          <div className="flex flex-wrap justify-between gap-5">
+                  <h2 className="font-bold text-4xl">Lorem, ipsum dolor.</h2>
+                  <p className=" xl:max-w-[520px]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi voluptatibus quam nostrum iure labore numquam iste blanditiis, voluptates odit repellat laborum! Fugit tempore, praesentium voluptatum ea suscipit quaerat saepe nisi!</p>
+        </div>
+        </div>
+        
+        <div className="flex justify-center items-center  mx-auto max-w-[1440px] relative w-full ">
+          <Image
+            src="/resources/boat.png"
+            alt="boat"
+            width={1440}
+            height={580}
+            className="w-full rounded-3xl"
+          />
+
+          <div className="absolute flex bg-white py-8 pl-5 pr-7 gap-3 rounded-3xl border shadow-sm ">
+                 
+                 <Image
+                   src="/resources/meter.svg"
+                   alt="meter"
+                   width={16}
+                   height={158}
+                   className="h-full w-auto"
+                 />
+                 
+                  <div className=" flex flex-col items-center justify-between">
+                    <div className="flex w-full flex-col">
+                      <div className="flex items-center justify-between w-full">
+                        <p className="text-gray-400 font-semibold">Destination</p>
+                        <p className="font-bold text-primary">48 min</p>
+                      </div>
+                      <p className="font-bold">chikoko cua</p>
+
+                    </div>
+
+                    <div className="flex w-full flex-col">
+                      
+                        <p className="text-gray-400 font-semibold">Destination</p>
+                        <p className="font-bold ">Arjona</p>
+                    </div>
+                  </div>
+          </div>
+        </div>
+        
+      </section>  
 
       {/*TEXTO*/}
       <section>
