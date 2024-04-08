@@ -5,6 +5,7 @@ import Nav from "@/components/Nav";
 export default function Home() {
   return (
     <main className="px-16">
+      pruba commit
       <Nav />
       <Content />
       <Footer/>
