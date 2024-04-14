@@ -3,6 +3,7 @@ import Image from "next/image";
 import { Star } from "lucide-react";
 import { X } from "lucide-react";
 import { Map } from "lucide-react";
+import Features from "./Features";
 
 interface CampProps {
   backgrundImage: string;
@@ -150,8 +151,15 @@ export default function Content() {
 
         <div className="flex items-center justify-end mt-10 px-6 lg:-mt-60 lg:mr-6 transition-all">
           <div className="bg-green-500 p-8 lg:max-w-[500px] rounded-3xl relative w-full overflow-hidden">
-            <h2 className="capitalize text-white"><strong>Lorem ipsum dolor sit</strong> amet consectetur adipisicing.</h2>
-            <p className="text-white text-sm mt-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat illo, veniam iusto ea modi ab placeat tempore quidem dolorem nihil!</p>
+            <h2 className="capitalize text-white">
+              <strong>Lorem ipsum dolor sit</strong> amet consectetur
+              adipisicing.
+            </h2>
+            <p className="text-white text-sm mt-5">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat
+              illo, veniam iusto ea modi ab placeat tempore quidem dolorem
+              nihil!
+            </p>
             <Image
               src="/resources/quote.svg"
               alt="Camp"
@@ -160,27 +168,27 @@ export default function Content() {
               className="absolute right-6 bottom-3 w-[140px]"
             />
           </div>
-
         </div>
       </section>
 
       {/*SECTION GUIDE*/}
-      <section className="flex flex-col justify-center items-center"> 
+      <section className="flex flex-col justify-center items-center">
         <div className=" px-6 lg:px-20 3xl:px-0 mx-auto max-w-[1440px] w-full pb-11">
-          <Image
-            src="/resources/camp.svg"
-            alt="Guide"
-            width={40}
-            height={50}
-            
-          />
-          <p className="uppercase font-medium text-primary mb-3">Lorem ipsum dolor sit amet.</p>
+          <Image src="/resources/camp.svg" alt="Guide" width={40} height={50} />
+          <p className="uppercase font-medium text-primary mb-3">
+            Lorem ipsum dolor sit amet.
+          </p>
           <div className="flex flex-wrap justify-between gap-5">
-                  <h2 className="font-bold text-4xl">Lorem, ipsum dolor.</h2>
-                  <p className=" xl:max-w-[520px]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi voluptatibus quam nostrum iure labore numquam iste blanditiis, voluptates odit repellat laborum! Fugit tempore, praesentium voluptatum ea suscipit quaerat saepe nisi!</p>
+            <h2 className="font-bold text-4xl">Lorem, ipsum dolor.</h2>
+            <p className=" xl:max-w-[520px]">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi
+              voluptatibus quam nostrum iure labore numquam iste blanditiis,
+              voluptates odit repellat laborum! Fugit tempore, praesentium
+              voluptatum ea suscipit quaerat saepe nisi!
+            </p>
+          </div>
         </div>
-        </div>
-        
+
         <div className="flex justify-center items-center  mx-auto max-w-[1440px] relative w-full ">
           <Image
             src="/resources/boat.png"
@@ -191,56 +199,34 @@ export default function Content() {
           />
 
           <div className="absolute flex bg-white py-8 pl-5 pr-7 gap-3 rounded-3xl border shadow-sm  lg:left-[5%] lg:transition-all">
-                 
-                 <Image
-                   src="/resources/meter.svg"
-                   alt="meter"
-                   width={16}
-                   height={158}
-                   className="h-full w-auto"
-                 />
-                 
-                  <div className=" flex flex-col items-center justify-between">
-                    <div className="flex w-full flex-col">
-                      <div className="flex items-center justify-between w-full">
-                        <p className="text-gray-400 font-semibold">Destination</p>
-                        <p className="font-bold text-primary">48 min</p>
-                      </div>
-                      <p className="font-bold">chikoko cua</p>
+            <Image
+              src="/resources/meter.svg"
+              alt="meter"
+              width={16}
+              height={158}
+              className="h-full w-auto"
+            />
 
-                    </div>
+            <div className=" flex flex-col items-center justify-between">
+              <div className="flex w-full flex-col">
+                <div className="flex items-center justify-between w-full">
+                  <p className="text-gray-400 font-semibold">Destination</p>
+                  <p className="font-bold text-primary">48 min</p>
+                </div>
+                <p className="font-bold">chikoko cua</p>
+              </div>
 
-                    <div className="flex w-full flex-col">
-                      
-                        <p className="text-gray-400 font-semibold">Destination</p>
-                        <p className="font-bold ">Arjona</p>
-                    </div>
-                  </div>
+              <div className="flex w-full flex-col">
+                <p className="text-gray-400 font-semibold">Destination</p>
+                <p className="font-bold ">Arjona</p>
+              </div>
+            </div>
           </div>
         </div>
-        
-      </section>  
-
-
-      {/*SFEATURES */}
-      <section>
-        <div className="flex flex-col justify-center items-center overflow-hidden 
-        bg-feature-bg bg-center bg-no-repeat py-24"> 
-            <div className="mx-auto max-w-[1440px]  px-6 lg:px-20 3xl:px-0 relative w-full justify-end">
-              <div>
-                <Image
-                src="/resources/phone.png"
-                alt="phone"
-                width={440}
-                height={100}
-                className="absolute top-[13%] z-10 hidden max-w-[1500px] rotate-[15deg] md:-left-16 lg:flex  3xl:left-20"
-                />
-              </div>
-              </div>  
-        </div>
       </section>
-      
-      
+
+      <Features/>
+
       {/*TEXTO*/}
       <section>
         <section className=" flex flex-col items-center gap-8">
